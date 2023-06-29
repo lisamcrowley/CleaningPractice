@@ -1,0 +1,24 @@
+---
+title: "Exercise: Explore, Clean, and Wrangle Data"
+author: "LC"
+format: html
+---
+## About the data
+
+## Setup
+
+## Read
+
+##Explore
+
+## Exercise 1
+
+## Exercise 2
+
+## Exercise 3
+
+## Exercise 4
+
+## Exercise 5
+
+## Exercise 6
