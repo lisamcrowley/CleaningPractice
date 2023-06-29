@@ -25,12 +25,29 @@ lobster_traps <-read_csv("https://portal.edirepository.org/nis/dataviewer?packag
 
 ```
 ##Explore
+:)
 
 ## Exercise 1
+```{r}
+lobster_abundance <- lobster_abundance %>% 
+    mutate(SIZE_MM = na_if(SIZE_MM, -99999))
+```
 
 ## Exercise 2
+```{r}
+aque_70mm <- lobster_abundance %>% 
+    filter(SITE == "AQUE" & SIZE_MM >= 70)
+```
 
 ## Exercise 3
+```{r}
+## Create a vector with unique sites in lobster_abundance
+abundance_sites <- unique(lobster_abundance$SITE)
+
+## Filter sites in vector above
+traps_subset <- lobster_traps %>% 
+    filter(SITE %in% abundance_sites)
+```
 
 ## Exercise 4
 
